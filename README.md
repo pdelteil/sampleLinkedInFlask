@@ -3,7 +3,19 @@ This project sets up a basic Flask web application that allows users to log in u
 
 The core functionalities are user authentication, session management, and access control to different parts of the application.
 
-Details about the source code:
+## How to run
+
+1 clone from repo
+
+2 Get Client ID and secret from Linkedin. 
+
+3 
+
+# Screenshots 
+
+
+
+## Details about the source code:
 
 * Unauthorized Handler:
 
@@ -28,3 +40,6 @@ Details about the source code:
 * Chat Route:
 
     Defines a route /chat which represents a chat interface, accessible only to logged-in users. It uses the @login_required decorator from Flask-Login to ensure that only authenticated users can access this route.
+
+
+  
