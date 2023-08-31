@@ -8,12 +8,31 @@ The core functionalities are user authentication, session management, and access
 1. Clone from this repo
 
    `git clone (https://github.com/pdelteil/sampleLinkedInFlask.git)`
+   
+2. Install requirements
+   `pip install -r requirements.txt`
 
-2. Create and app, get client_ID and secret_id from Linkedin. [(Step by step guide)](https://www.linkedin.com/pulse/how-get-signin-linkedin-work-taric-andrade/)
-3. Install 
+3. Create and app, get client_ID and secret_id from Linkedin. [(Step by step guide)](https://www.linkedin.com/pulse/how-get-signin-linkedin-work-taric-andrade/)
    
 
 # Screenshots 
+
+## Chat 
+
+When the user is not yet authenticated:
+
+<img src="https://github.com/pdelteil/sampleLinkedInFlask/assets/20244863/d83b5e4a-ed21-483b-8cdc-6420a909685b" width="400">
+
+
+## Linkedin Login
+Login screen
+
+<img src="https://github.com/pdelteil/sampleLinkedInFlask/assets/20244863/b38f2446-111c-45fc-bd6f-ed5e91d53cf8" width="400">
+
+When the user is authenticated:
+
+<img src="https://github.com/pdelteil/sampleLinkedInFlask/assets/20244863/964ea7f3-b0f3-438d-a3f5-0fa1e6d957fc" width="400">
+
 
 
 
