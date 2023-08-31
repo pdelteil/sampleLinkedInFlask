@@ -5,11 +5,13 @@ The core functionalities are user authentication, session management, and access
 
 ## How to run
 
-1 clone from repo
+1. Clone from this repo
 
-2 Get Client ID and secret from Linkedin. 
+   `git clone (https://github.com/pdelteil/sampleLinkedInFlask.git)`
 
-3 
+2. Create and app, get client_ID and secret_id from Linkedin. [(Step by step guide)](https://www.linkedin.com/pulse/how-get-signin-linkedin-work-taric-andrade/)
+3. Install 
+   
 
 # Screenshots 
 
