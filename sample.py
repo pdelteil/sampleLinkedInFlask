@@ -1,6 +1,6 @@
 import requests
-from flask import Flask, redirect, render_template, request, session, url_for
-from flask_login import (LoginManager, UserMixin, current_user, login_required, login_user)
+from flask import Flask, redirect, request, session, url_for
+from flask_login import (LoginManager, UserMixin, login_required, login_user)
 from flask_oauthlib.client import OAuth
 
 # User class for Flask-Login
