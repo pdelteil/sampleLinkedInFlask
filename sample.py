@@ -1,5 +1,5 @@
 import requests
-from flask import Flask, redirect, request, session, url_for
+from flask import Flask, redirect, request, session, url_for,render_template
 from flask_login import (LoginManager, UserMixin, login_required, login_user)
 from flask_oauthlib.client import OAuth
 
@@ -19,6 +19,7 @@ login_manager.init_app(app)
 CLIENT_ID = ''
 CLIENT_SECRET = ''
 REDIRECT_URI = 'http://REDIRECT_URL/login/authorized'
+
 AUTHORIZATION_URL = 'https://www.linkedin.com/oauth/v2/authorization'
 TOKEN_URL = 'https://www.linkedin.com/oauth/v2/accessToken'
 
@@ -37,7 +38,7 @@ def login():
         'response_type': 'code',
         'client_id': CLIENT_ID,
         'redirect_uri': REDIRECT_URI,
-        'state': 'random_string_for_csrf_prevention',  # Should be random for security reasons
+        'state': 'UVFNwd5fGXGnQOt',  # Should be random for security reasons
         'scope': 'profile email openid'  # Adjust scope based on your needs
     }
     url = requests.Request('GET', AUTHORIZATION_URL, params=params).prepare().url
@@ -91,7 +92,7 @@ def authorized():
 
 @app.route('/')
 def index():
-    return "This is the index!"
+    return render_template("index.html") #"This is the index!"
 
 @app.route('/chat', methods=['GET', 'POST'])
 @login_required
@@ -99,4 +100,5 @@ def chat():
     return "this is the chat! Access to logged in users only!"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
