@@ -18,7 +18,7 @@ login_manager.init_app(app)
 #LinkedIn data
 CLIENT_ID = ''
 CLIENT_SECRET = ''
-REDIRECT_URI = 'http://test.profindler.io/login/authorized'
+REDIRECT_URI = 'http://REDIRECT_URL/login/authorized'
 AUTHORIZATION_URL = 'https://www.linkedin.com/oauth/v2/authorization'
 TOKEN_URL = 'https://www.linkedin.com/oauth/v2/accessToken'
 
